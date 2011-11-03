@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/collref
+# catalog-date 2009-11-09 14:16:05 +0100
+# catalog-license lppl
+# catalog-version 2.0
 Name:		texlive-collref
 Version:	2.0
 Release:	1
@@ -45,6 +51,7 @@ into a single \bibitem block.
 #- source
 %doc %{_texmfdistdir}/source/latex/collref/collref.dtx
 %doc %{_texmfdistdir}/source/latex/collref/collref.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -55,3 +62,5 @@ into a single \bibitem block.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
