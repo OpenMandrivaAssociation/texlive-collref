@@ -53,3 +53,18 @@ into a single \bibitem block.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.0-2
++ Revision: 750381
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.0-1
++ Revision: 718095
+- texlive-collref
+- texlive-collref
+- texlive-collref
+- texlive-collref
+- texlive-collref
+
