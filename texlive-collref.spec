@@ -6,7 +6,7 @@
 # catalog-version 2.0
 Name:		texlive-collref
 Version:	2.0
-Release:	3
+Release:	4
 Summary:	Collect blocks of references into a single reference
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/collref
