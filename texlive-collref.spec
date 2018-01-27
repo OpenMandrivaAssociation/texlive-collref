@@ -1,11 +1,5 @@
-# revision 15878
-# category Package
-# catalog-ctan /macros/latex/contrib/collref
-# catalog-date 2009-11-09 14:16:05 +0100
-# catalog-license lppl
-# catalog-version 2.0
 Name:		texlive-collref
-Version:	2.0b
+Version:	2.0c
 Release:	1
 Summary:	Collect blocks of references into a single reference
 Group:		Publishing
@@ -36,13 +30,10 @@ into a single \bibitem block.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/collref/collref.sty
-%doc %{_texmfdistdir}/doc/latex/collref/README
-%doc %{_texmfdistdir}/doc/latex/collref/collref.pdf
-%doc %{_texmfdistdir}/doc/latex/collref/collsamp.tex
+%{_texmfdistdir}/tex/latex/collref
+%doc %{_texmfdistdir}/doc/latex/collref
 #- source
-%doc %{_texmfdistdir}/source/latex/collref/collref.dtx
-%doc %{_texmfdistdir}/source/latex/collref/collref.ins
+%doc %{_texmfdistdir}/source/latex/collref
 
 #-----------------------------------------------------------------------
 %prep
@@ -53,18 +44,3 @@ into a single \bibitem block.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.0-2
-+ Revision: 750381
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.0-1
-+ Revision: 718095
-- texlive-collref
-- texlive-collref
-- texlive-collref
-- texlive-collref
-- texlive-collref
-
