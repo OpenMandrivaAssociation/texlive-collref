@@ -1,6 +1,6 @@
 Name:		texlive-collref
 Version:	46358
-Release:	1
+Release:	2
 Summary:	Collect blocks of references into a single reference
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/collref
